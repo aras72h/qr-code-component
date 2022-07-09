@@ -1,6 +1,6 @@
 :root {
   /* Type */
-  --font-size: 15px;
+  --font-size: calc(15px + .3vw);
   --typeface: 'Outfit', sans-serif;
   /* Color */
   --white: hsl(0, 0%, 100%);
@@ -28,26 +28,30 @@ html {
 .card {
   text-align: center;
   width: 80%;
-  max-width: 300px;
-  padding: 15px;
-  border-radius: 15px;
+  max-width: 18.488rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .card img {
   max-width: 100%;
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 .card h1 {
-  padding: 10px;
+  margin: 1.44rem 0 1rem 0;
 }
 
 .card p {
-  padding: 10px;
+  margin-bottom: 1.44rem;
+  padding: 0 1rem;
 }
 
 /* Type */
-
+.card h1 {
+  font-size: 1.44rem;
+  font-weight: 700;
+}
 
 
 /* Color */
@@ -75,3 +79,9 @@ html {
   align-items: center;
   justify-content: center;
 }
+
+/* @media (min-width: 1440px) {
+  :root {
+    --font-size: calc(15px + 0.5vw);
+  }
+} */
